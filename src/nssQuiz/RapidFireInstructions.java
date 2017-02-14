@@ -1,3 +1,4 @@
+package nssQuiz;
 import javax.swing.JFrame;
 import javax.swing.JRootPane;
 import javax.swing.JPanel;
@@ -7,16 +8,19 @@ import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.Color;
 import java.awt.Font;
-import javax.swing.BoxLayout;
 import javax.swing.SwingConstants;
 import java.awt.GridLayout;
 import java.awt.SystemColor;
-import javax.swing.JTextPane;
 import javax.swing.DropMode;
 import javax.swing.JButton;
 
  class RapidFireInstructions extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public static void main(String ...args)
 	{
 		new RapidFireInstructions(new RapidFire2("")).setVisible(true);
@@ -57,7 +61,7 @@ import javax.swing.JButton;
 		textPane.setLineWrap(true);
 		textPane.setDropMode(DropMode.INSERT);
 		textPane.setFont(new Font("Ravie", Font.PLAIN, 20));
-		textPane.setText("\r\n1. You have 20 mins(1200 secs) to answer the questions\r\n\r\n\r\n2. each Wrong Answer will Cost you\r\n 1 min(60 secs)\r\n\r\n\r\n3. each skip will cost you 30 secs");
+		textPane.setText("\r\n1. You have 20 mins(1200 secs) to answer the questions\r\n\r\n\r\n2. each Wrong Answer will Cost you\r\n 40 secs\r\n\r\n\r\n3. each skip will cost you 20 secs");
 		
 		panel_1.add(textPane);
 		

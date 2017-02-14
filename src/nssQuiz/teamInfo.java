@@ -1,3 +1,4 @@
+package nssQuiz;
 import java.awt.EventQueue;
 
 import javax.swing.JButton;
@@ -13,6 +14,10 @@ import java.awt.event.ActionEvent;
 
 public class teamInfo extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JLabel name[] =new JLabel[10];
 	JTextField text[] =new JTextField[10];
 	JButton submit=new JButton("Submit");

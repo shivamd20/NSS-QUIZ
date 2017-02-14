@@ -1,3 +1,4 @@
+package nssQuiz;
 import javax.swing.JFrame;
 import java.awt.GridBagLayout;
 import javax.swing.JPanel;
@@ -74,6 +75,7 @@ public class RapidFire2 extends JFrame {
 	   JLabel questionSkippedLabel ;
 	public static void main(String... args) {
 		String temp;
+		System.out.println("rames");
 		do
 		{
 		temp=JOptionPane.showInputDialog("Enter Your/Team Name");} while(temp==null||temp.compareTo("")==0);
@@ -257,7 +259,7 @@ public class RapidFire2 extends JFrame {
 		panel_11.setBackground(new Color(139, 0, 0));
 		menuBar.add(panel_11);
 		
-		JLabel lblNss = new JLabel("NSS SSEC");
+		JLabel lblNss = new JLabel("Tech Quiz (Apptitute Test)");
 		lblNss.setIcon(null);
 		lblNss.setFont(new Font("Tempus Sans ITC", Font.BOLD, 28));
 		
@@ -406,6 +408,8 @@ public class RapidFire2 extends JFrame {
 		optDpanel.setVisible(false);
 		skpBtn.setVisible(false);
 		skpBtn.setToolTipText("It will cost "+SKIP_DEDUCTION+"secs");
+
+		getDBConnection();
 	}
 
 	Timer timeReal;
@@ -418,7 +422,6 @@ public class RapidFire2 extends JFrame {
 
 	public void getQuestion() {
 		//textPane.setBounds(panel_10.getBounds());
-		getDBConnection();
 		try {
 
 			PreparedStatement ps = con.prepareStatement("select * from QUIZ_QUE  where SNO=?");

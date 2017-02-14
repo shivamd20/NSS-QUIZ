@@ -1,3 +1,4 @@
+package nssQuiz;
 import javax.swing.JFrame;
 import java.awt.GridLayout;
 import javax.swing.JPanel;
@@ -23,10 +24,10 @@ import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 
-
 @SuppressWarnings("serial")
 public class Structure extends JFrame {
 
+	
 	static int pointsArray[]={0,0,0,0,0,0,0,0,0,0,0,0};
 	int qcount=1;
 	JTextPane textPane = new JTextPane();
@@ -380,7 +381,6 @@ public class Structure extends JFrame {
 			String str1[]=str.split(" ");
 			for(String X:str1)
 				System.out.print(X+"n");
-			int i=Integer.parseInt(str1[0]);
 			int j=Integer.parseInt(str1[1]);
 		
 			System.out.println(e.getActionCommand()+"j="+j);

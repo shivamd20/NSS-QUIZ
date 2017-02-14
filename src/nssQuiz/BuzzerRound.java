@@ -1,3 +1,4 @@
+package nssQuiz;
 import javax.swing.JFrame;
 import java.awt.GridBagLayout;
 import javax.swing.JPanel;
@@ -246,7 +247,7 @@ public class BuzzerRound extends JFrame {
 		label_9.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_16.add(label_9);
 
-		JButton skipButton = new JButton("Next Question");
+		final JButton skipButton = new JButton("Next Question");
 		skipButton.setEnabled(false);
 		skipButton.setMnemonic('n');
 		skipButton.setIcon(new ImageIcon(BuzzerRound.class.getResource("/com/sun/javafx/scene/web/skin/IncreaseIndent_16x16_JFX.png")));
