@@ -445,7 +445,7 @@ public class RapidFire2 extends JFrame {
 			}
 			// qcount=1;
 
-			con.close();
+			//con.close();
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
